@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Our Mission Sarwari Dental Clinic</title>
+    <link rel="shortcut icon" type="image/x-icon" href="/images/logo.png" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <!--JQuery CDN-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+<!-- HEADER / NAV -->
+ <nav class="navbar">
+    <div class="max-width">
+              <div class="menu-btn">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+       <div class="card">
+    <div class="logo-img">
+        <img src="/images/logo.png" alt="Logo">
+    </div>
+    <div class="logo">
+        <a href="./index.html">Sarwari <span>Dental</span> Clinic</a>
+    </div>
+</div>
+        <ul class="menu">
+            <li><a id="home" href="./index.html" class="menu-link">Home</a></li>
+            <li><a id="ourMission" href="./mission.html" class="menu-link">Our Mission</a></li>
+            <li><a id="services" href="./services.html" class="menu-link">Services</a></li>
+            <li><a id="contactUs" href="./contact.html" class="menu-link">Contact Us</a></li>
+        </ul>
+      <div class="search-icon">
+    <input type="text" placeholder="Search">
+    <div class="autocom-box"></div>
+   <label for="icon" class="icon"> <i class="fas fa-search"></i> </label>
+</div>
+    </div>
+</nav>
+<div class="main-content">
+<!--hero-->
+        <section class="services-hero">
+    <div class="services-hero-content">
+    <h2 id="heroTitle">Contact Us</h2>
+    <p id="heroSubtitle">We’d love to hear from you.</p>
+    </div>
+        </section>
+  <section class="contact-section">
+  <form class="contact-form" id="contactForm">
+    <h2 id="contactFormTitle">Send Us a Message</h2>
+
+    <input type="text" id="name" placeholder="Full Name" required>
+    <input type="email" id="email" placeholder="Email Address" required>
+    <input type="tel" id="phone" placeholder="Phone Number">
+    <textarea id="message" placeholder="Your Message" rows="5" required></textarea>
+
+    <button type="submit" class="btn futuristic" id="sendBtn">
+  <span id="submitButtonForm" class="btn-text">Send Message</span>
+  <span class="pulse"></span>
+</button>
+  </form>
+</section>
+
+<!-- POPUPS -->
+<div class="popup success" id="successPopup">✓ Email Ready to Send</div>
+<div class="popup error" id="errorPopup">⚠ Please fill out all fields</div>
+
+  <!-- FOOTER -->
+
+
+  <footer class="site-footer">
+  <div class="footer-container">
+
+    <!-- Column 1 -->
+    <div class="footer-col">
+      <h3 id="footerTitle">Sarwari Dental Clinic</h3>
+      <p id="footerDesc">
+        Providing gentle, modern dental care for the whole family. Your smile is our priority.
+      </p>
+    </div>
+
+    <!-- Column 2 -->
+    <div class="footer-col">
+      <h4 id="footerNav">Quick Links</h4>
+      <ul>
+        <li><a id="footerHome" href="./index.html">Home</a></li>
+        <li><a id="footerOurMission" href="./mission.html">Our Mission</a></li>
+        <li><a id="footerServices" href="./services.html">Services</a></li>
+        <li><a id="footerContactUs" href="./contact.html">Contact Us</a></li>
+      </ul>
+    </div>
+
+    <!-- Column 3 -->
+    <div class="footer-col">
+      <h4 id="footerContactTitle">Contact</h4>
+      <p id="footerAddress">address</p>
+      <p id="footerPhoneNum">phone number</p>
+      <p id="footerEmail">email</p>
+    </div>
+
+    <!-- Column 4 -->
+    <div class="footer-col">
+      <h4 id="footerOfficeHrs">Office Hours</h4>
+      <p id="footerMonFri">Mon – Fri: 9:00 AM – 5:00 PM</p>
+      <p id="footerSat">Saturday: 9:00 AM – 1:00 PM</p>
+      <p id="footerSun">Sunday: Closed</p>
+    </div>
+    <div class="language-selector">
+    <label id="language" for="lang">Language:</label>
+    <select id="lang">
+      <option value="en">English</option>
+      <option value="pa">پښتو</option>
+      <option value="fa">فارسی</option>
+      <option value="ur">اردو</option>
+    </select>
+  </div>
+  </div>
+  <div class="footer-bottom">
+    <p id="footerText">© 2025 Sarwari Dental Clinic. All rights reserved.</p>
+  </div>
+  </footer>
+  </div>
+
+<script src="/js/contact.js"></script>
+<script src="/js/contact-language.js"></script>
+
+</body>
+</html>

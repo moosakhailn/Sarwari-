@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sarwari Dental Clinic</title>
+    <link rel="shortcut icon" type="image/x-icon" href="/images/logo.png" />
+
+    <!--Font Awesome CDN-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <!--JQuery CDN-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+<nav class="navbar">
+    <div class="max-width">
+              <div class="menu-btn">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+       <div class="card">
+    <div class="logo-img">
+        <img src="/images/logo.png" alt="Logo">
+    </div>
+    <div class="logo">
+        <a href="./index.html">Sarwari <span>Dental</span> Clinic</a>
+    </div>
+</div>
+        <ul class="menu">
+            <li><a id="home" href="./index.html" class="menu-link">Home</a></li>
+            <li><a id="ourMission" href="./mission.html" class="menu-link">Our Mission</a></li>
+            <li><a id="services" href="./services.html" class="menu-link">Services</a></li>
+            <li><a id="contactUs" href="./contact.html" class="menu-link">Contact Us</a></li>
+        </ul>
+      <div class="search-icon">
+    <input type="text" placeholder="Search">
+    <div class="autocom-box"></div>
+   <label for="icon" class="icon"> <i class="fas fa-search"></i> </label>
+</div>
+    </div>
+</nav>
+
+
+<div class="main-content">
+<!--Hero-->
+
+<div class="hero">
+  <div class="hero-content">
+    <h1 id="heroTitle">Gentle, Modern Dental Care for the Whole Family</h1>
+    <p id="heroSubtitle">Comfortable, affordable dentistry using the latest technology.</p>
+
+    <div class="hero-buttons">
+      <a id="indexBooking" href="./contact.html" class="btn primary">Book Appointment</a>
+    </div>
+  </div>
+</div>
+
+<!--Testimonial-->
+<div id="slidy-container">
+  <figure id="slidy">
+    <img src="/images/sarwari1.png" alt="eyes" >
+    <img src="/images/sarwari2.png" alt="lou" >
+    <img src="/images/sarwari3.png" alt="lucie-2" >
+    <img src="/images/sarwari4.png" alt="lucie" >
+  </figure>
+</div>
+
+<!--Trust Section-->
+ <section class="trust">
+  <div class="trust-card">
+    <img src="/images/tooth.png" alt="Tooth icon">
+    <h3 id="trustCareTitle">Experienced Care</h3>
+    <p id="trustCareSubtitle">
+      Years of professional dental experience using modern techniques to ensure safe, effective treatment.
+    </p>
+  </div>
+
+  <div class="trust-card">
+    <img src="/images/toothbrush.png" alt="Toothbrush icon">
+    <h3 id="hygTitle">Trusted Hygiene</h3>
+    <p id="hygSubtitle">
+      We follow strict hygiene standards and use advanced tools to protect your smile and health.
+    </p>
+  </div>
+</section>
+<div class="health">
+  <h1 id="smileH">Your Smile And Health Is The Most Important Thing.</h1>
+
+  <div class="hero-buttons smile-health">
+    <a id="smileBook" href="./contact.html" class="btn primary">Book Appointment</a>
+  </div>
+</div>
+
+<!--Footer-->
+
+<footer class="site-footer">
+  <div class="footer-container">
+
+    <!-- Column 1 -->
+    <div class="footer-col">
+      <h3>Sarwari Dental Clinic</h3>
+      <p id="footerDesc">
+        Providing gentle, modern dental care for the whole family.
+        Your smile is our priority.
+      </p>
+    </div>
+
+    <!-- Column 2 -->
+    <div class="footer-col">
+      <h4 id="footerNav">Quick Links</h4>
+      <ul>
+        <li><a id="footerHome" href="./index.html">Home</a></li>
+        <li><a id="footerOurMission" href="./mission.html">Our Mission</a></li>
+        <li><a id="footerServices" href="./services.html">Services</a></li>
+        <li><a id="footerContactUs" href="./contact.html">Contact Us</a></li>
+      </ul>
+    </div>
+
+    <!-- Column 3 -->
+    <div class="footer-col">
+      <h4 id="footerContactTitle">Contact</h4>
+      <p id="footerAddress">address</p>
+      <p id="footerPhoneNum">phone number</p>
+      <p id="footerEmail">email</p>
+    </div>
+
+    <!-- Column 4 -->
+    <div class="footer-col">
+      <h4 id="footerOfficeHrs">Office Hours</h4>
+      <p id="footerMonFri">Mon – Fri: 9:00 AM – 5:00 PM</p>
+      <p id="footerSat">Saturday: 9:00 AM – 1:00 PM</p>
+      <p id="footerSun">Sunday: Closed</p>
+    </div>
+    <div class="language-selector">
+    <label id="language" for="lang">Language:</label>
+    <select id="lang">
+      <option value="en">English</option>
+      <option value="pa">پښتو</option>
+      <option value="fa">فارسی</option>
+      <option value="ur">اردو</option>
+    </select>
+  </div>
+  </div>
+  <div class="footer-bottom">
+    <p id="footerText">© 2025 Sarwari Dental Clinic. All rights reserved.</p>
+  </div>
+  </footer>
+
+</div>
+
+
+
+<script>
+    $('.menu-btn').click(function(){
+        $('.navbar .menu').toggleClass("active");
+        $('.menu-btn i').toggleClass("active");
+    })
+</script>
+<script src="/js/script.js"></script>
+<script src="/js/index-language.js"></script>
+
+</body>
+</html>
